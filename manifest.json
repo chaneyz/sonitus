@@ -1,0 +1,21 @@
+{
+	"manifest_version": 2,
+
+	"name": "Sonitus",
+	"version": "1.1",
+	"description": "A simple player for SoundCloud allowing users to stream music from their playlists.",
+	"permissions": [
+		"browsingData",
+		"activeTab",
+		"https://connect.soundcloud.com/sdk-2.0.0.js",
+		"*://api.soundcloud.com/*",
+		"https://api.soundcloud.com/*",
+		"http://api.soundcloud.com/*"
+	],
+	"browser_action": {
+		"default_icon": "dist/assets/sonitus.png",
+		"default_popup": "popup.html"
+	},
+
+	"content_security_policy": "script-src 'self' https://connect.soundcloud.com/; object-src 'self' https://connect.soundcloud.com/"
+}
