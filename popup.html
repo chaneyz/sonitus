@@ -1,18 +1,28 @@
 <!doctype html>
 <html>
 	<head>
-		<script src="https://connect.soundcloud.com/sdk-2.0.0.js"></script>
-		<script src="node_modules/jquery/dist/jquery.min.js"></script>
-		<script type="text/javascript" src="popup.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
 		<nav>
 			<a href="#menu" id="a-link"></a>
 			<a href="#playlist" id="a-link"></a>
 		</nav>
-	<!-- <ul id="results">
-				
-		</ul> -->
+	  <!-- <ul id="results">
+		
+	  </ul> -->
+
+		
+
+
 		<div id="player"></div>
+
+		<a href="#" class="connect">Connect with SoundCloud</a>
+		<p>Hello, your name is <span id="username"></span></p>
+
+		
+		<script src="https://connect.soundcloud.com/sdk-2.0.0.js"></script>
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="popup.js"></script>
 	</body>
 </html>

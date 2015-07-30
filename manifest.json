@@ -8,14 +8,16 @@
 		"browsingData",
 		"activeTab",
 		"https://connect.soundcloud.com/sdk-2.0.0.js",
+		"http://connect.soundcloud.com/*",
 		"*://api.soundcloud.com/*",
 		"https://api.soundcloud.com/*",
 		"http://api.soundcloud.com/*"
 	],
+	
 	"browser_action": {
-		"default_icon": "dist/assets/sonitus.png",
+		"default_icon": "dist/assets/soundcloud-2-32.png",
 		"default_popup": "popup.html"
 	},
 
-	"content_security_policy": "script-src 'self' https://connect.soundcloud.com/; object-src 'self' https://connect.soundcloud.com/"
+	"content_security_policy": "script-src 'self' 'unsafe-eval' https://connect.soundcloud.com/ https://api-v2.soundcloud.com; object-src 'self'"
 }
